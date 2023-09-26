@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HTML Page</title>
+</head>
+<body>
+    <!-- BACKGROUND bg.jpeg from assets folder -->
+    <body background="assets/background.jpeg">
+    <header>
+        <h1>This is a Header</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Main Content</h2>
+        <p>This is the main content of your page.</p>
+
+        <table border="1">
+            <TR>
+                <TH COLSPAN="4">
+                    <H3>
+                        TABEL MAHASISWA
+                    </H3>
+                </TH>
+            </TR>
+            <tr>
+                <th>NAMA</th>
+                <th>NIM</th>
+                <th>Email</th>
+                <th>Jurusan</th>
+                <th>Photo</th>
+            </tr>
+            <tr>
+                <!-- Tidy up the fonting and pading of the tables -->
+                <td style="background-color: red;">Rahmadiyan</td>
+                <td style="background-color: green;">19225003</td>
+                <td style="background-color: green;">asdasd@gmail.com</td>
+                <td rowspan=2, style="background-color: green;">Sistem Informasi</td>
+                <td><img src="assets/profile.jpeg" alt="profile" width="40" height="40"></td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: red;">Hilmi</td>
+                <td align="center" style="background-color: green;">19225001</td>
+                <td align="center" style="background-color: green;">asdaad@gmail.com</td>
+                <td align="center"><img src="assets/profile.jpeg" alt="profile" width="40" height="40"></td>
+            </tr>
+        </table>
+    </main>
+
+    <aside>
+        <h3>Aside Content</h3>
+        <p>This is some additional content.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+</body>
+</html>
