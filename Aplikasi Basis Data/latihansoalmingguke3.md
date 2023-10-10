@@ -36,8 +36,7 @@ MariaDB [(none)]> show databases;
 
 MariaDB [(none)]> use 19225003_bab3a;
 Database changed
-MariaDB [19225003_bab3a]> create table pedagang (id_pedagang char(5) not null primary key, nama_pedagang varchar(35) not null, jns_kelamin varchar(10) not null, alamat varchar(50) not null, no_telp varchar(18) not null, tgl_lahir date() not null);
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '() not null)' at line 1
+
 MariaDB [19225003_bab3a]> CREATE TABLE pedagang (
     ->     id_pedagang CHAR(5) NOT NULL PRIMARY KEY, 
     ->     nama_pedagang VARCHAR(35) NOT NULL, 

@@ -7,8 +7,6 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-MariaDB [(none)]> crate database db_les_private;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'crate database db_les_private' at line 1
 MariaDB [(none)]> create database db_les_private;
 Query OK, 1 row affected (0.004 sec)
 
@@ -43,8 +41,6 @@ MariaDB [db_les_private]> alter table siswa change nama nama_siswa  varchar(30) 
 Query OK, 0 rows affected (0.035 sec)              
 Records: 0  Duplicates: 0  Warnings: 0
 
-MariaDB [db_les_private]> alter table siswa tgl tgl_lahir date not null;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tgl_lahir date not null' at line 1
 MariaDB [db_les_private]> alter table siswa change tgl tgl_lahir date not null;
 Query OK, 0 rows affected (0.011 sec)
 Records: 0  Duplicates: 0  Warnings: 0
@@ -103,8 +99,6 @@ MariaDB [db_les_private]> describe ruang;
 2 rows in set (0.006 sec)
 ```
 
-MariaDB [db_les_private]> alter table tutor change jml_kelas int(4);
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'int(4)' at line 1
 MariaDB [db_les_private]> alter table tutor modify jml_kelas int(4);
 Query OK, 0 rows affected (0.028 sec)              
 Records: 0  Duplicates: 0  Warnings: 0

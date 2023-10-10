@@ -31,12 +31,6 @@ MariaDB [(none)]> show databases;
 9 rows in set (0.012 sec)
 ```
 
-MariaDB [(none)]> drop database komik_cobalagi;l
-ERROR 1008 (HY000): Can't drop database 'komik_cobalagi'; database doesn't exist
-    -> ;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'l' at line 1
-MariaDB [(none)]> drop database komik_cobalagi;
-ERROR 1008 (HY000): Can't drop database 'komik_cobalagi'; database doesn't exist
 MariaDB [(none)]> drop database komik_cobalagi1;
 Query OK, 0 rows affected, 2 warnings (0.022 sec)
 
@@ -73,10 +67,6 @@ MariaDB [komik_coba1]> show tables;
 2 rows in set (0.002 sec)
 ```
 
-MariaDB [komik_coba1]> create table(no_pinjam int(4) not null, id_anggota char(4) not null, id_komik char(5) not null, jumlah int(2) not null);
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(no_pinjam int(4) not null, id_anggota char(4) not null, id_komik char(5) not...' at line 1
-MariaDB [komik_coba1]> ;
-ERROR: No query specified
 
 MariaDB [komik_coba1]> describe komik;
 ```
@@ -92,8 +82,6 @@ MariaDB [komik_coba1]> describe komik;
 5 rows in set (0.026 sec)
 ```
 
-MariaDB [komik_coba1]> create table pinjam(no_pinjam int(4), id_anggota char(4), id_komik(5), jumlah int(2));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(5), jumlah int(2))' at line 1
 MariaDB [komik_coba1]> create table pinjam(no_pinjam int(4), id_anggota char(4), id_komik int(5), jumlah int(2));
 Query OK, 0 rows affected (0.016 sec)
 
@@ -157,8 +145,6 @@ MariaDB [komik_coba1]> describe anggota
 6 rows in set (0.005 sec)
 ```
 
-MariaDB [komik_coba1]> rename anggota to anggota_warnet;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'anggota to anggota_warnet' at line 1
 MariaDB [komik_coba1]> rename table anggota to anggota_warnet;
 Query OK, 0 rows affected (0.025 sec)
 
@@ -195,8 +181,6 @@ MariaDB [komik_coba1]> alter table pinjam add primary key (no_pinjam);
 Query OK, 0 rows affected (0.026 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
-MariaDB [komik_coba1]> alter table pinjam rename column pinjam to transaksi;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'column pinjam to transaksi' at line 1
 MariaDB [komik_coba1]> rename table pinjam to transaksi;
 Query OK, 0 rows affected (0.009 sec)
 
